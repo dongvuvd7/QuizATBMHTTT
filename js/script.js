@@ -171,7 +171,7 @@ function showResult(){
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let point = 10/question.length * userScore;
+        let point = 10/questions.length * userScore;
         let scoreTag = '<span>and congrats! 🎉, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p><br><b>' + point + '</b></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
